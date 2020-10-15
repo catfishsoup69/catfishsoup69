@@ -1,0 +1,96 @@
+.content() {
+	max-width: @content-width;
+	margin: 0 auto;
+}
+
+.btn() {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	display: block;
+	padding: 16px 38px 12px;
+	background-color: @btn-color;
+	color: @text-color_light;
+	border-radius: 3px;
+	.decorate-txt(800, 14px, 23px);
+	text-transform: uppercase;
+	transition: all 0.2 ease;
+
+	&:hover {
+		background-color: @active-color;
+		color: @text-color_dark;
+	}
+
+	&:active {
+		background-color: @btn-color;
+		color: @text-color_grey;
+		transform: translate(0, 2px);
+	}
+}
+
+.regular-txt (@font-weight, @font-size, @line-height) {
+	font-family: @main-font;
+	font-style: normal;
+	font-weight: @font-weight;
+	font-size: @font-size;
+	line-height: @line-height;
+}
+
+.decorate-txt (@font-weight, @font-size, @line-height) {
+	font-family: @decorate-font;
+	font-style: normal;
+	font-weight: @font-weight;
+	font-size: @font-size;
+	line-height: @line-height;
+}
+
+.paragraph () {
+	font-family: @main-font;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 28px;
+	color: @text-color;
+	text-align: center;
+}
+
+.first-heading() {
+	font-family: @decorate-font;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 52px;
+	line-height: 1.2;
+	color: @text-color_light;
+	text-align: center;
+}
+
+.second-heading() {
+	font-family: @decorate-font;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 1.2;
+	color: @text-color_dark;
+	text-align: center;
+}
+
+.third-heading() {
+	font-family: @decorate-font;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 1.2;
+	color: @text-color_light;
+	text-align: left;
+}
+
+.fourth-heading() {
+	font-family: @decorate-font;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.2;
+	color: @text-color_light;
+	text-align: left;
+	margin: 0;
+}
